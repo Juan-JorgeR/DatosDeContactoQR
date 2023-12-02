@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Generador QR</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <form id="form">
+        <h1>Formulario</h1>
+        <label
+          >Nombres:
+          <input
+            id="nombres"
+            placeholder="Nombres"
+            autocomplete="off"
+            type="text"
+            required
+        /></label>
+        <label
+          >Apellidos:
+          <input
+            id="apellidos"
+            placeholder="Apellidos"
+            autocomplete="off"
+            type="text"
+            required
+        /></label>
+        <label
+          >Empresa donde labora:
+          <input
+            id="empresa"
+            placeholder="Empresa"
+            autocomplete="off"
+            type="text"
+            required
+        /></label>
+        <label
+          >Teléfono Móvil:
+          <input
+            id="telefono_m"
+            placeholder="000-000-0000"
+            autocomplete="off"
+            type="text"
+            required
+        /></label>
+        <label
+          >Correo Personal:
+          <input
+            id="email_personal"
+            placeholder="ejemplo@gmail.com"
+            autocomplete="off"
+            type="email"
+            required
+        /></label>
+        <input id="enviar" value="Generar" type="submit" />
+      </form>
+      <div id="div_qr" class="contenedorQR">
+        <img src="" alt="QR generador" />
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/QrCode.min.js"></script>
+  </body>
+</html>
